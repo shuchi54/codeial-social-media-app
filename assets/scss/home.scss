@@ -1,0 +1,120 @@
+#home-container{
+  display: flex;
+  background-color: #f0f2f5;
+  #feed-posts{
+    width: 70%;
+    padding: 10px;
+  }
+
+  #user-friends{
+    width: 30%;
+    padding: 10px;
+    border-left: 1px solid lightgrey;
+   
+  }
+
+  textarea{
+    border: 1px solid lightgrey;
+    padding: 7px;
+    padding-bottom: 15px;
+    font-size: large;
+    margin: 15px;
+    font-weight: 400;
+  }
+
+  #btn{
+    border-radius: 4px;
+    font-size: 17px;
+    margin: 5px;
+    padding: 6px 28px;
+    background-color: rgb(218, 111, 11);
+    box-shadow: 1px grey;
+    border: none;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+
+#posts-list-container{
+  img{
+    border-radius: 100%;
+    width: 40px;
+  }
+  p{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  i{
+    color: red;
+
+  }
+
+ 
+  
+  li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 5px;
+    background-color: white;
+  }
+   
+padding: 5px;
+
+
+}
+
+#comm {
+  background-color: #ecf0fa;
+  color: black;
+  padding: 4px;
+
+}
+
+
+// #user-friends {
+//   background-color: white;
+// }
+
+#name{
+  border-bottom: 0.5px solid lightgrey;
+  padding: 5px;
+}
+.bold{
+  font-size: 21px;
+  font-weight: 600px;
+}
+
+
+
+.post-comments{
+  input{
+    border: none;
+    box-shadow: 3px  lightgrey;
+    padding: 12px;
+    font-size: 15px;
+    margin: 2px;
+    padding-right: 40px;
+    border-radius: 5%;
+   background-color: #e3e5e8;
+  }
+
+  input:hover{
+    background-color: #bec1c7;
+  }  
+
+  button{
+    border: none;
+    background-color: rgb(88, 78, 78);
+    border-radius: 10%;
+    font-size: 18px;
+   padding: 8px;
+     margin: 6px;
+
+  }
+
+  button:hover{
+    background-color: rgb(58, 38, 38);
+  }
+}

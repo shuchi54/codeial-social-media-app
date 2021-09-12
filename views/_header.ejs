@@ -1,35 +1,33 @@
-<header id="layout-header">
-    <nav>
-        <div class="mini-logo">
-            <p>
-                <a href='/'>
-                    codeial
-                </a>
-            </p>
-        </div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-        <div class="auth-links">
-            <ul>
-                <% if (locals.user){ %>
-                <li>
-                    <a href="/users/profile"><%= user.name %></a>
-                </li>
-                <li>
-                    <a href="/users/sign-out">Sign Out</a>
-                </li>
-                <% }else{ %>
-                <li>
-                    <a href="/users/sign-in">Sign In</a>
-                </li>
-                <li>
-                    <a href="/users/sign-in">Sign Up</a>
-                </li>
-        
-                <% } %>
-            </ul>
-        </div>
-    </nav>
-
-   
-
-</header>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href='/'>codeial</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <% if (locals.user){ %>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/users/profile/<%= user.id %>"><%= user.name %></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users/sign-out">Sign Out</a>
+          </li>
+          <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link" href="/users/sign-in">Sign In</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/users/sign-Up">Sign Up</a>
+          </li>
+          <% } %>
+        </ul>
+        <span class="navbar-text">
+          social media app
+        </span>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </nav>
