@@ -10,8 +10,11 @@ passport.js - simple, unobtrusive authentication for node.js
 # Installation
 
 $ cd ../codeial
+
 $ npm install
+
 $ npm start
+
 
 offers many features like a chat engine,a wall to share posts and
 comments which can be updated or deleted anytime. and a mailing service.
